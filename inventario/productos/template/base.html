@@ -1,0 +1,47 @@
+<!-- productos/templates/base.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        Sistema de Gestión de Productos
+        {% endblock %}
+    </title>
+  
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h2>Bienvenido al Sistema de Gestión de Productos</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'inicio' %}">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+        </div>
+    </nav>
+    <main>
+        
+        <article>
+            <h2>¿Por qué lo usamos?</h2>
+            <p>Es un hecho establecido hace demasiado tiempo que un lector se 
+                distraerá con el contenido del texto de un sitio mientras que mira su diseño. 
+                El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal
+                de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, 
+                contenido aquí". Estos textos hacen parecerlo un español que se puede leer.
+                 Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum 
+                 como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" 
+                 va a dar por resultado muchos sitios web que usan este texto si se 
+                 encuentran en estado de desarrollo. 
+        </article>
+      Banner
+    </main>
+</body>
+</html>
